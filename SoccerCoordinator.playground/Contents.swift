@@ -2,6 +2,11 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var playerName = [String]()
+var playerHeight = [Int]()
+var playedBefore = [Bool]()
+var parentsName = [String]()
 
-//Something Here
+
+
+
