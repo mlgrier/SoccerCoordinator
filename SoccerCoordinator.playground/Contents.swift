@@ -2,6 +2,11 @@
 
 import UIKit
 
+/* Teams for the players */
+
+var dragons = [String]()
+var sharks = [String]()
+var raptors = [String]()
 
 /* Step 1: Creating a dictionary of all player information (Name, Height/Inches, Soccer Experience, Parent's Names */
 
@@ -28,9 +33,7 @@ let player18: [String: Any] = ["name": "Herschel Krustofski", "height": 45, "exp
 
 /* Logic to iterate through players and assign to teams. DRAGONS SHARKS RAPTORS */
 
-var dragons = [String]()
-var sharks = [String]()
-var raptors = [String]()
+
 
 
 
