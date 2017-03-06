@@ -26,6 +26,11 @@ let player17: [String: Any] = ["name": "Les Clay", "height": 42, "experienced": 
 let player18: [String: Any] = ["name": "Herschel Krustofski", "height": 45, "experienced": true, "guardianNames": "Hyman and Rachel Krustofski"]
 
 
+/* Logic to iterate through players and assign to teams. DRAGONS SHARKS RAPTORS */
+
+var dragons = [String]()
+var sharks = [String]()
+var raptors = [String]()
 
 
 
