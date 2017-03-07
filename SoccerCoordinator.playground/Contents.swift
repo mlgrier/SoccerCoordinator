@@ -9,6 +9,11 @@ var teamSharks = [[String: Any]]()
 var teamRaptors = [[String: Any]]()
 
 
+// Letters for the teams
+
+var letters = [[String: Any]]()
+
+
 // Empty dictionaries to split players
 
 var experiencedPlayers = [[String: Any]]()
@@ -81,6 +86,13 @@ for playersWithoutExperience in unexperiencedPlayers {
     }
 }
 
+for l in teamRaptors {
+    if teamRaptors {
+        letters.append()
+    } else {
+        letters.append(teams)
+    }
+}
 
 
 experiencedPlayers.count
