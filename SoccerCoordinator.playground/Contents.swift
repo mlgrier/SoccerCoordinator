@@ -15,6 +15,10 @@ var experiencedPlayers = [[String: Any]]()
 var unexperiencedPlayers = [[String: Any]]()
 
 
+let numberOfExperiencedPlayer = 3
+let averageTeamsPlayers = 3
+
+
 /* Step 1: Creating a dictionary of all player information (Name, Height/Inches, Soccer Experience, Parent's Names */
 
 
@@ -54,9 +58,6 @@ for player in playerRoster {
     }
 }
 
-let numberOfExperiencedPlayer = 3
-let averageTeamsPlayers = 3
-
 for playersWithExperience in experiencedPlayers {
     if numberOfExperiencedPlayer > teamDragons.count {
         teamDragons.append(playersWithExperience)
@@ -65,8 +66,8 @@ for playersWithExperience in experiencedPlayers {
     } else if numberOfExperiencedPlayer > teamRaptors.count {
         teamRaptors.append(playersWithExperience)
     }
-}
 
+}
 
 for playersWithoutExperience in unexperiencedPlayers {
     if averageTeamsPlayers > teamRaptors.count {
@@ -77,12 +78,14 @@ for playersWithoutExperience in unexperiencedPlayers {
         teamSharks.append(playersWithoutExperience)
     }
 }
+
+
+
 experiencedPlayers.count
 unexperiencedPlayers.count
 
 teamSharks.count
 teamDragons.count
 teamRaptors.count
-
 
 
