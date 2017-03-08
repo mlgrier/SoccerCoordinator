@@ -9,18 +9,20 @@ var teamSharks = [[String: Any]]()
 var teamRaptors = [[String: Any]]()
 
 
-// Letters for the teams
 
-var letters = [[String: Any]]()
+// Array for letters that will be sent to the guardians of the children
+
+var letters = [String]()
 
 
-// Empty dictionaries to split players
+// Dictionaries to split experienced players from unexperienced players
 
 var experiencedPlayers = [[String: Any]]()
 var unexperiencedPlayers = [[String: Any]]()
 
 
-/* Step 1: Creating a dictionary of all player information (Name, Height/Inches, Soccer Experience, Parent's Names */
+
+/* Step 1: Creating a dictionary for each of players for their information (Name, Height/Inches, Soccer Experience, Parent's Names */
 
 
 let joeSmith: [String: Any] = ["name": "Joe Smith", "height": 42, "experienced": true, "guardianNames": "Jim and Jan Smith"]
@@ -45,11 +47,12 @@ let herschelKrustofski: [String: Any] = ["name": "Herschel Krustofski", "height"
 
 
 
-/* Logic to iterate through players and assign to teams. DRAGONS SHARKS RAPTORS */
+/* Taking all of the individual player dictionaries and combining them into one to being sorting the players */
 
  let players = [joeSmith, jillTanner, billBon, evaGordon, mattGill, kimmyStein, sammyAdams,karlSaygan, suzaneGreenberg, salDali, joeKavalier, benFinkelstein, diegoSoto, chloeAlaska, arnoldWillis, phillipHelm, lesClay, herschelKrustofski]
 
 
+// Code for sorting the experienced from the unexperienced players
 
 for player in players {
     if player["experienced"] as! Bool == true {
@@ -58,6 +61,8 @@ for player in players {
         unexperiencedPlayers.append(player)
     }
 }
+
+// Code to evenly assign experienced players to teams
 
 let numberOfExperiencedPlayer = 3
 
@@ -73,6 +78,8 @@ for playersWithExperience in experiencedPlayers {
 
 }
 
+// Code to evenly assign unexperienced players to teams
+
 let averageTeamsPlayers = 6
 
 
@@ -86,20 +93,30 @@ for playersWithoutExperience in unexperiencedPlayers {
     }
 }
 
-for l in teamRaptors {
-    if teamRaptors {
-        letters.append()
-    } else {
-        letters.append(teams)
-    }
+// Code to iterate through TEAMRAPTORS and write a letter to each guardian and child. / Add letter to the LETTERS array
+
+for teamRaptorsLetter in teamRaptors {
+    letters.append("We are happy to let you know that your child \(teamRaptorsLetter["name"]!) is now a member of The Raptors! Coach Ham will be holding the first team practice March 18 @ 1PM, so \(teamRaptorsLetter["guardianNames"]!) thank you for letting you child join us this season.")
+    
+    print(letters)
+    
 }
 
+// Code to iterate through TEAMDRAGON and write a letter to each guardian and child. / Add letter to the LETTERS array
 
-experiencedPlayers.count
-unexperiencedPlayers.count
+for teamDragonsLetter in teamDragons {
+    letters.append("We are happy to let you know that your child \(teamDragonsLetter["name"]!) is now a member of The Raptors! Coach Cake will be holding the first team practice March 17 @ 1PM, so \(teamDragonsLetter["guardianNames"]!) thank you for letting you child join us this season.")
+    
+    print(letters)
+    
+}
 
-teamSharks.count
-teamDragons.count
-teamRaptors.count
+// Code to iterate through TEAMSHARKS and write a letter to each guardian and child. / Add letter to the LETTERS array
 
+for teamSharksLetter in teamSharks {
+    letters.append("We are happy to let you know that your child \(teamSharksLetter["name"]!) is now a member of The Raptors! Coach Taco will be holding the first team practice March 18 @ 1PM, so \(teamSharksLetter["guardianNames"]!) thank you for letting you child join us this season.")
+    
+    print(letters)
+    
+}
 
