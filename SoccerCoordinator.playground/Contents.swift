@@ -98,16 +98,13 @@ for playersWithoutExperience in unexperiencedPlayers {
 for teamRaptorsLetter in teamRaptors {
     letters.append("We are happy to let you know that your child \(teamRaptorsLetter["name"]!) is now a member of The Raptors! Coach Ham will be holding the first team practice March 18 @ 1PM, so \(teamRaptorsLetter["guardianNames"]!) thank you for letting you child join us this season.")
     
-    print(letters)
-    
 }
+
 
 // Code to iterate through TEAMDRAGON and write a letter to each guardian and child. / Add letter to the LETTERS array
 
 for teamDragonsLetter in teamDragons {
     letters.append("We are happy to let you know that your child \(teamDragonsLetter["name"]!) is now a member of The Raptors! Coach Cake will be holding the first team practice March 17 @ 1PM, so \(teamDragonsLetter["guardianNames"]!) thank you for letting you child join us this season.")
-    
-    print(letters)
     
 }
 
@@ -116,7 +113,8 @@ for teamDragonsLetter in teamDragons {
 for teamSharksLetter in teamSharks {
     letters.append("We are happy to let you know that your child \(teamSharksLetter["name"]!) is now a member of The Raptors! Coach Taco will be holding the first team practice March 18 @ 1PM, so \(teamSharksLetter["guardianNames"]!) thank you for letting you child join us this season.")
     
-    print(letters)
-    
 }
 
+for letter in letters {
+    print(letter)
+}
